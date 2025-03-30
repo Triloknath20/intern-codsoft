@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CodeSphere – Your Coding Hub</title>
+  <style>
+    /* Base styling */
+    body {
+      margin: 0;
+      font-family: 'Helvetica Neue', Arial, sans-serif;
+      background: #f9f9f9;
+      color: #333;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+    header {
+      background: #222;
+      padding: 15px 30px;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+    }
+    header .logo {
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    nav ul li a:hover {
+      color: #f0a500;
+    }
+    .btn {
+      padding: 10px 20px;
+      background: #f0a500;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      text-decoration: none;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .btn:hover {
+      background: #d18e00;
+    }
+    /* Hero Section */
+    .hero {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: space-between;
+      background: #fff;
+      padding: 50px 30px;
+      opacity: 0;
+      animation: fadeIn 1s forwards;
+      animation-delay: 0.5s;
+    }
+    .hero-content {
+      flex: 1 1 500px;
+      padding: 20px;
+    }
+    .hero-content h1 {
+      font-size: 2.5em;
+      margin-bottom: 20px;
+    }
+    .hero-content p {
+      font-size: 1.1em;
+      margin-bottom: 30px;
+    }
+    .hero-image {
+      flex: 1 1 400px;
+      text-align: center;
+      padding: 20px;
+    }
+    .hero-image img {
+      max-width: 100%;
+      border-radius: 10px;
+      transition: transform 0.3s ease;
+    }
+    .hero-image img:hover {
+      transform: scale(1.05);
+    }
+    /* Sections */
+    section {
+      padding: 50px 30px;
+      background: #fff;
+      margin: 20px 0;
+    }
+    section:nth-of-type(even) {
+      background: #f4f4f4;
+    }
+    section h2 {
+      margin-bottom: 20px;
+      font-size: 2em;
+      color: #222;
+    }
+    section p {
+      margin-bottom: 15px;
+      max-width: 800px;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: justify;
+    }
+    /* Features Grid */
+    .features-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .feature {
+      background: #fff;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+      flex: 1 1 250px;
+      transition: transform 0.3s ease;
+    }
+    .feature:hover {
+      transform: translateY(-5px);
+    }
+    .feature img {
+      max-width: 100%;
+      border-radius: 5px;
+      margin-bottom: 10px;
+    }
+    footer {
+      background: #222;
+      color: #fff;
+      padding: 20px 30px;
+      text-align: center;
+    }
+    /* Fade in animation */
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+    /* Responsive adjustments */
+    @media (max-width: 768px) {
+      .hero {
+        flex-direction: column;
+      }
+      nav ul {
+        flex-direction: column;
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">CodeSphere</div>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#features">Features</a></li>
+        <li><a href="#how-it-works">How It Works</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Welcome to CodeSphere</h1>
+      <p>
+        CodeSphere is your one-stop hub for coding tutorials, project challenges, and community-driven learning. 
+        Explore comprehensive guides, interactive code snippets, and real-world projects designed to sharpen your skills.
+      </p>
+      <a href="#features" class="btn">Explore Features</a>
+      <a href="#contact" class="btn" style="background: #0077cc;">Get In Touch</a>
+    </div>
+    <div class="hero-image">
+      <img src="c:\Users\trilo\Downloads\pexels-goumbik-574071.jpg" alt="Coding in Action">
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About CodeSphere</h2>
+    <p>
+      CodeSphere was built by passionate developers for developers. Our mission is to create an engaging platform where coders of all levels can discover new skills, work on projects, and share ideas.
+    </p>
+    <p>
+      From in-depth tutorials to interactive coding challenges, CodeSphere offers an environment designed to foster continuous learning and innovation. Whether you're a beginner or a seasoned programmer, you'll find valuable resources to help you stay ahead in the ever-evolving world of technology.
+    </p>
+  </section>
+
+  <section id="features">
+    <h2>Key Features</h2>
+    <div class="features-grid">
+      <div class="feature">
+        <img src="c:\Users\trilo\Downloads\pexels-fauxels-3184360.jpg" alt="Interactive Tutorials">
+        <h3>Interactive Tutorials</h3>
+        <p>Dive into hands-on coding exercises and comprehensive guides that help you master new programming languages and frameworks.</p>
+      </div>
+      <div class="feature">
+        <img src="c:\Users\trilo\Downloads\pexels-pixabay-372787.jpg" alt="Project Challenges">
+        <h3>Project Challenges</h3>
+        <p>Test your skills with real-world projects and challenges. Collaborate with peers and push the boundaries of your coding expertise.</p>
+      </div>
+      <div class="feature">
+        <img src="c:\Users\trilo\Downloads\pexels-pixabay-270408.jpg" alt="Code Snippets">
+        <h3>Code Snippets Library</h3>
+        <p>Access a vast library of reusable code snippets and best practices to speed up your development process.</p>
+      </div>
+      <div class="feature">
+        <img src="c:\Users\trilo\Downloads\pexels-edmond-dantes-8553866.jpg" alt="Community Support">
+        <h3>Community Support</h3>
+        <p>Join a vibrant community of developers, share your projects, ask questions, and learn together with peer-to-peer support.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="how-it-works">
+    <h2>How It Works</h2>
+    <p>
+      <strong>Step 1:</strong> Browse through our extensive library of tutorials and select a course that matches your skill level.<br>
+      <strong>Step 2:</strong> Engage with interactive challenges and projects to apply what you've learned in a practical environment.<br>
+      <strong>Step 3:</strong> Connect with fellow coders in our community forums to exchange ideas, solve problems, and grow together.
+    </p>
+    <p>
+      Our platform is designed to guide you from learning the basics to tackling advanced projects—all while fostering collaboration and continuous growth.
+    </p>
+  </section>
+
+  <section id="contact">
+    <h2>Get in Touch</h2>
+    <p>
+      Have questions or need assistance? Our team of experienced developers is here to help. Reach out via email or join our community forum for support.
+    </p>
+    <a href="mailto:support@codesphere.com" class="btn">Email Us</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 CodeSphere. All rights reserved.</p>
+    <p>
+      Follow the conversation on LinkedIn: 
+      <a href="https://in.linkedin.com/company/codsoft" target="_blank" rel="noopener noreferrer">#codsosft</a>
+    </p>
+    
+  </footer>
+
+  <script>
+    // Smooth scroll for navigation links
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', function(e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        const targetSection = document.getElementById(targetId);
+        if (targetSection) {
+          targetSection.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
