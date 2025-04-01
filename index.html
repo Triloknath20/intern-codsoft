@@ -1,126 +1,265 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculator</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: Arial, sans-serif;
-        }
-
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            background: #f0f0f0;
-        }
-
-        .calculator {
-            background: #fff;
-            border-radius: 12px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            width: 320px;
-        }
-
-        .display {
-            background: #e8f5e9;
-            padding: 20px;
-            text-align: right;
-            margin-bottom: 20px;
-            border-radius: 8px;
-            font-size: 2em;
-            height: 70px;
-            overflow: hidden;
-        }
-
-        .buttons {
-            display: grid;
-            grid-template-columns: repeat(4, 1fr);
-            gap: 10px;
-        }
-
-        button {
-            padding: 15px;
-            font-size: 1.2em;
-            border: none;
-            background: #f5f5f5;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: background-color 0.2s;
-        }
-
-        button:hover {
-            background: #e0e0e0;
-        }
-
-        .operator {
-            background: #757575;
-            color: white;
-        }
-
-        .operator:hover {
-            background: #616161;
-        }
-
-        .clear, .ce {
-            background: #ff9800;
-            color: white;
-        }
-
-        .clear:hover, .ce:hover {
-            background: #f57c00;
-        }
-
-        .equals {
-            background: #4caf50;
-            color: white;
-            grid-row: span 2;
-        }
-
-        .equals:hover {
-            background: #388e3c;
-        }
-
-        .zero {
-            grid-column: span 2;
-        }
-    </style>
+    <title>Triloknath Reddy K - Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
-<body> 
-    <div class="calculator">
-        <div class="display">0</div>
-        <div class="buttons">
-            <button class="clear">AC</button>
-            <button class="ce">CE</button>
-            <button class="operator">%</button>
-            <button class="operator">÷</button>
-            
-            <button>7</button>
-            <button>8</button>
-            <button>9</button>
-            <button class="operator">×</button>
-            
-            <button>4</button>
-            <button>5</button>
-            <button>6</button>
-            <button class="operator">-</button>
-            
-            <button>1</button>
-            <button>2</button>
-            <button>3</button>
-            <button class="operator">+</button>
-            
-            <button class="zero">0</button>
-            <button>.</button>
-            <button class="equals">=</button>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">Triloknath</div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#certificates">Certificates</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <div class="line"></div>
+                    <div class="line"></div>
+                    <div class="line"></div>
+                </div>
+            </nav>
         </div>
-    </div>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home">
+        <div class="container">
+            <div class="home-content">
+                <div class="home-text">
+                    <h1>Hi, I'm Triloknath Reddy K</h1>
+                    <p>A passionate BCA student with skills in web development</p>
+                    <a href="#contact" class="btn">Get In Touch</a>
+                </div>
+                <div class="home-image">
+                    <img src="/placeholder.svg?height=300&width=300" alt="Triloknath Reddy K">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about">
+        <div class="container">
+            <div class="section-title">
+                <h2>About Me</h2>
+            </div>
+            <div class="about-content">
+                <div class="personal-info">
+                    <h3>Personal Details</h3>
+                    <ul>
+                        <li><strong>Name:</strong> Kudumu Triloknath Reddy</li>
+                        <li><strong>Email:</strong> triloknath7795@gmail.com</li>
+                        <li><strong>Phone:</strong> 9110291415</li>
+                        <li><strong>Address:</strong> Near water tank Veerasandra, 560100 Electronic City</li>
+                        <li><strong>Date of Birth:</strong> September 18, 2004</li>
+                        <li><strong>Gender:</strong> Male</li>
+                    </ul>
+                </div>
+                <div class="languages">
+                    <h3>Languages</h3>
+                    <div class="language-items">
+                        <div class="language-item">
+                            <span>English</span>
+                            <div class="rating">
+                                <span class="filled"></span>
+                                <span class="filled"></span>
+                                <span class="filled"></span>
+                                <span class="filled"></span>
+                                <span class="filled"></span>
+                                <span class="filled"></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="language-item">
+                            <span>Kannada</span>
+                            <div class="rating">
+                                <span class="filled"></span>
+                                <span class="filled"></span>
+                                <span class="filled"></span>
+                                <span class="filled"></span>
+                                <span class="filled"></span>
+                                <span class="filled"></span>
+                                <span class="filled"></span>
+                                <span class="filled"></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="language-item">
+                            <span>Hindi</span>
+                            <div class="rating">
+                                <span class="filled"></span>
+                                <span class="filled"></span>
+                                <span class="filled"></span>
+                                <span class="filled"></span>
+                                <span class="filled"></span>
+                                <span class="filled"></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="language-item">
+                            <span>Telugu</span>
+                            <div class="rating">
+                                <span class="filled"></span>
+                                <span class="filled"></span>
+                                <span class="filled"></span>
+                                <span class="filled"></span>
+                                <span class="filled"></span>
+                                <span class="filled"></span>
+                                <span class="filled"></span>
+                                <span class="filled"></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+        <div class="container">
+            <div class="section-title">
+                <h2>My Skills</h2>
+            </div>
+            <div class="skills-content">
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>HTML</span>
+                        <span>80%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="80"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>CSS</span>
+                        <span>70%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="70"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>Python</span>
+                        <span>60%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="60"></div>
+                    </div>
+                </div>
+                <div class="skill-item">
+                    <div class="skill-name">
+                        <span>MS Office</span>
+                        <span>85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="85"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <div class="container">
+            <div class="section-title">
+                <h2>Education</h2>
+            </div>
+            <div class="education-content">
+                <div class="education-item">
+                    <h3>Bachelor of Computer Applications (BCA)</h3>
+                    <p class="education-place">ISBR College, Electronic City</p>
+                    <p class="education-date">2022 - 2025</p>
+                    <p>Acquired skills in web development utilizing HTML, CSS, JavaScript, and popular frameworks.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates">
+        <div class="container">
+            <div class="section-title">
+                <h2>Certificates</h2>
+            </div>
+            <div class="certificates-content">
+                <div class="certificate-item">
+                    <h3>MDCA (Master Diploma Computer Application)</h3>
+                    <p class="certificate-date">April 2022</p>
+                    <p>MS Office, PowerPoint, Basics in Accounting Package Tally ERP 9 and Internet</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hobbies Section -->
+    <section id="hobbies">
+        <div class="container">
+            <div class="section-title">
+                <h2>Hobbies</h2>
+            </div>
+            <div class="hobbies-content">
+                <div class="hobby-item">
+                    <i class="fas fa-futbol"></i>
+                    <p>Playing Sports</p>
+                </div>
+                <div class="hobby-item">
+                    <i class="fas fa-paint-brush"></i>
+                    <p>Drawing</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+        <div class="container">
+            <div class="section-title">
+                <h2>Contact Me</h2>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <p>triloknath7795@gmail.com</p>
+                    </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2023 Triloknath Reddy K. All rights reserved.</p>
+                <div class="download-cv">
+                    <a href="#" class="btn" id="downloadCV">Download CV</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <script src="script.js"></script>
 </body>
-</html> 
+</html>
